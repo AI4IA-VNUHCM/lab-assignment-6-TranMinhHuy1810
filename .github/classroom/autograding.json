@@ -1,0 +1,104 @@
+{
+  "tests": [
+    {
+      "name": "Ex1 Test1",
+      "setup": "gcc ./src/Exercise1.c -o ./bin/ex1.out -lm",
+      "run": "./bin/ex1.out 15",
+      "input": "",
+      "output": "fifteen ",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex1 Test2",
+      "setup": "",
+      "run": "./bin/ex1.out 115",
+      "input": "",
+      "output": "one hundred fifteen ",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex2 Test1",
+      "setup": "gcc ./src/Exercise2.c -o ./bin/ex2.out -lm",
+      "run": "./bin/ex2.out one five ten",
+      "input": "",
+      "output": "five one ten",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex2 Test2",
+      "setup": "",
+      "run": "./bin/ex2.out two three thirteen",
+      "input": "",
+      "output": "thirteen three two",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex3 Test1",
+      "setup": "gcc ./src/Exercise3.c -o ./bin/ex3.out -lm",
+      "run": "./bin/ex3.out \"Smile is the longest word!\"",
+      "input": "",
+      "output": "Shortest word: is\r\nLongest word: longest",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex3 Test2",
+      "setup": "",
+      "run": "./bin/ex3.out \"This is a short sentence\"",
+      "input": "",
+      "output": "Shortest word: a\r\nLongest word: sentence",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex4 Test1",
+      "setup": "gcc ./src/Exercise4.c -o ./bin/ex4.out -lm",
+      "run": "./bin/ex4.out \" There  are   ten  blanks here! \"",
+      "input": "",
+      "output": "There are ten blanks here!",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex4 Test2",
+      "setup": "",
+      "run": "./bin/ex4.out \"This one is already formatted!\"",
+      "input": "",
+      "output": "This one is already formatted!",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex5 Test1",
+      "setup": "gcc ./src/Exercise5.c -o ./bin/ex5.out -lm",
+      "run": "./bin/ex5.out \"{([])}\"",
+      "input": "",
+      "output": "Valid!",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    },
+    {
+      "name": "Ex5 Test2",
+      "setup": "",
+      "run": "./bin/ex5.out \"{[(])}\"",
+      "input": "",
+      "output": "Invalid!",
+      "comparison": "exact",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}

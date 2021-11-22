@@ -13,10 +13,23 @@ Ex:
 #include <math.h>
 #include <string.h>
 
+
 void Ex4(char *str){
 	//Your codes here
-	
+	int temp = 0;
+    for(int i = 0; i < strlen(str); i++){
+        if(str[i] != ' '){
+            printf("%c", str[i]);
+            temp = 0;
+        }else{
+            if(temp == 0) {
+				printf(" ");
+			}
+            temp++;
+        }
+    }
 }
+
 
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating

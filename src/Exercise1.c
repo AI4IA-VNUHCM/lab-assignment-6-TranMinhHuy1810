@@ -62,8 +62,6 @@ void Ex1(char* n){
 int main(int argc, char *argv[]) {
 	//testing variable, applying it to your algorithm for auto-evaluating
 	char *temp = argv[1];
-	
 	Ex1(temp);
-	
 	return 0;
 }
